@@ -20,7 +20,7 @@ useEffect(() => {
                     </a>
 
                      {/*MOBILE MENU*/}
-                    <div className= "w-7 h-5 relative cursor-pointer z-40 md:hidden" 
+                    <div className= "w-7 h-5 relative cursor-pointer z-40 md:hidden -translate-x-10" 
                         onClick={()=> setMenuOpen((prev) => !prev) }>
                         &#9776;
                     </div>
@@ -35,13 +35,6 @@ useEffect(() => {
 
                     </div>
                                                                  
-
-
-
-
-
-
-
 
             </div>
         </div>
