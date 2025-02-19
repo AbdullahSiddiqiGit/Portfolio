@@ -7,7 +7,7 @@ export const Home = () => {
       >
         <div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent leading right">
-            You know my name, this is where my intro goes.
+            Hi, I'm Abdullah.
           </h1>
 
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
