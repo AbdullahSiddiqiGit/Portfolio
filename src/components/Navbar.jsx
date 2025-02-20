@@ -17,7 +17,7 @@ useEffect(() => {
         <div className= "max-w-5xl mx-auto px-4">
             <div className = "flex justify-between items-center h-16">
                 <a href= "#home" className= "font-mono text-xl font-bold text-white"> 
-                    Abdullah H.  <span className ="text-green-500">Siddiqi </span>
+                <span className ="text-green-500"> | </span> My Portfolio <span className ="text-green-500"> | </span>
                     </a>
 
                      {/*MOBILE MENU*/}
