@@ -10,7 +10,7 @@ import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/Contact";
 
 function App() {
-  //this section is to check if our loading screem schould be shown or not.
+  //this section is to check if our loading screem should be shown or not.
   const [isLoaded, setIsLoaded] = useState(false); //setIsLoaded is a function 
   const [menuOpen, setMenuOpen] = useState(false);
 

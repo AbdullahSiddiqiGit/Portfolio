@@ -2,12 +2,16 @@ import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
 
+
+//These next 6 lines are to refresh the form part of the page after the user has submitted the form.
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,11 +23,12 @@ export const Contact = () => {
         e.target,
         import.meta.env.VITE_PUBLIC_KEY
       )
+      
       .then((result) => {
-        alert("Message Sent!");
+        alert("Message Sent. I'll get back to you as soon as I can.");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch(() => alert("Something went wrong. Please try again."));
   };
 
   return (

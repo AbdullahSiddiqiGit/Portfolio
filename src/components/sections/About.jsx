@@ -1,3 +1,5 @@
+ import { RevealOnScroll } from "../RevealOnScroll";
+ 
  export const About = () => {
 
     const frontendSkills = ["React", "TailwindCSS","HTML", "PHP", "Wordpress"];
@@ -10,6 +12,7 @@
         id="about"
         className="min-h-screen flex items-center justify-center py-20"
       >
+        <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-gray-300 to-white-400 bg-clip-text text-transparent text-center">
             About Me
@@ -142,6 +145,7 @@
             </div>
           </div>
         </div>
+        </RevealOnScroll>
       </section>
     );
 
