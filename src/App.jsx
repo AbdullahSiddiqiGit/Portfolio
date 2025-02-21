@@ -19,9 +19,9 @@ return (
    <> 
    {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>}
     <div
-     className={`min-h-screen transition-opacity duration-700 ${
+     className={`bg-black min-h-screen w-full text-gray-500 flex flex-col transition-opacity duration-700 ${
       isLoaded ? "opacity-100" : "opacity-0"}
-       bg-black text-gray-500`}
+        `}
        >
 
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> 
