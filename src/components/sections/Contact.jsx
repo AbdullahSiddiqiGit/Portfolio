@@ -16,14 +16,23 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_PUBLIC_KEY
-      )
-      
+
+    console.log("Service ID:", import.meta.env.VITE_SERVICE_ID);
+    console.log("Template ID:", import.meta.env.VITE_TEMPLATE_ID);
+    console.log("Public Key:", import.meta.env.VITE_PUBLIC_KEY);
+
+    
+    emailjs.send(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      import.meta.env.VITE_PUBLIC_KEY
+    )
+    
       .then((result) => {
         alert("Message Sent. I'll get back to you as soon as I can.");
         setFormData({ name: "", email: "", message: "" });

@@ -23,13 +23,13 @@ export const About = () => {
               Some hats I've worn: Software Engineer, Data Analyst, Machine
               Learning Engineer, Open Source Contributor, and E-Waste
               Minimization Advocate. <br />
-              My familiar languages and frameworks categorized:
+              I'd advise viewing my resume for the most updated list of projects and information! Below are my familiar languages and frameworks categorized:
             </p>
 
             {/* View Resume Button */}
             <div className="flex justify-center mt-6">
               <a
-                href="/resume.pdf" // Replace with actual resume URL
+                href="https://drive.google.com/file/d/1hWlR2MqQWea-FLjfyU2x-i1khKH-qN6T/view" // Replace with actual resume URL
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-gray-300 text-gray-300 py-2 px-6 rounded font-medium transition-all duration-200 
@@ -122,19 +122,19 @@ export const About = () => {
                 <div className="space-y-4 text-gray-300">
                   <div>
                     <h4 className="font-semibold"> Software Engineer at GoMeat.Inc (March 2023 - current)</h4>
-                    <p>Here is where the relevant experience for GoMeat goes.</p>
+                    <p>Team lead for the blockchain department. Led a project to decentralize main database before launch.</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold"> Software Engineer at GoMeat.Inc (March 2023 - current)</h4>
-                    <p>Here is where the relevant experience for Advancement Ops goes.</p>
+                    <h4 className="font-semibold"> Data Analust at Ohio Wesleyan University Advancement Operations(May-Dec 2023)</h4>
+                    <p>Leveraged PowerBI, SQL and VBA to create visualization dashboards and automated processes.</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold"> Software Engineer at GoMeat.Inc (March 2023 - current)</h4>
-                    <p>Here is where the relevant experience for Siemens goes.</p>
+                    <h4 className="font-semibold"> Software Developer Intern at Siemens (May-August 2022)</h4>
+                    <p>Participated in transitioning a company of 1000+ employees from Oracle to SAP. Worked with ABAP and S/4Hana.</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold"> Software Engineer at GoMeat.Inc (March 2023 - current)</h4>
-                    <p>Here is where the relevant experience for Convsys goes.</p>
+                    <h4 className="font-semibold"> Machine Learning Intern at Convsys Ltd (Sept-Dec 2020)</h4>
+                    <p>Aided in Data Annotation and refining model training algorithms in Tensorflow.</p>
                   </div>
                 </div>
               </div>
