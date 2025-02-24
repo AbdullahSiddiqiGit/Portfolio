@@ -4,7 +4,7 @@ export const Home = () => {
     return (
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center relative bg-black text-gray-400"
+        className="w-full min-h-screen flex items-center justify-center bg-black text-gray-400"
       >
         <RevealOnScroll>
         <div>
@@ -13,34 +13,31 @@ export const Home = () => {
           </h1>
 
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            I'm a developer who loves writing programs to address problems or to
-            make things look more pleasent, ideally both. Avid tech
+            I'm a developer who likes writing programs to address problems or to
+            make things look more pleasant, ideally both. Avid tech
             restorationist and open source contributor.
           </p>
 
-          {/*buttons to go to the other pages*/}
+          {/* Buttons to navigate to other sections */}
           <div className="flex justify-center space-x-4">
             <a
               href="#projects"
-              className={`border borger-green-500/50 text-green-500 py-3 px-6 rounded font-medium transition relative 
-            overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]`}
+              className="border border-green-500 text-green-500 py-3 px-6 rounded font-medium transition-all duration-200 
+                         hover:bg-green-500 hover:text-black hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]"
             >
               View Projects
             </a>
 
             <a
-              href="#Contact"
-              className={`"border border-blue-500/50 text-blue-500 py-4 px-7 rounded font-medium transition-all duration-200 
-                 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover: bg-blue-500/10`}
+              href="#contact"
+              className="border border-blue-500 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 
+                         hover:bg-blue-500 hover:text-black hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
               Contact Me
             </a>
-
-
           </div>
-        </div>
+         </div>
         </RevealOnScroll>
       </section>
     );
 };
-

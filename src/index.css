@@ -2,10 +2,12 @@
 
 
 html, body, #root {
-  height: 100%;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: black !important;
 }
+
 
  body {      /*removed html before body*/
   background-color: #0a0a0a;
@@ -56,3 +58,27 @@ html, body, #root {
   transform: translateY(0);
 }
 
+/* WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #34d399, #3b82f6) !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #059669, #2563eb) !important;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: #34d399 #1a1a1a !important;
+  scrollbar-width: thin !important;
+}
